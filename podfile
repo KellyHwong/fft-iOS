@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'fft' do
+    pod 'CSV.swift', '~> 2.1.0'
+end

@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F4AFA9D22D8C54D00B00985 /* MatlabUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4AFA9C22D8C54D00B00985 /* MatlabUtils.swift */; };
+		1F4FA74F22D8B9F50063E69F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FA74E22D8B9F50063E69F /* AppDelegate.swift */; };
+		1F4FA75122D8B9F50063E69F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FA75022D8B9F50063E69F /* ViewController.swift */; };
+		1F4FA75422D8B9F50063E69F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4FA75222D8B9F50063E69F /* Main.storyboard */; };
+		1F4FA75722D8B9F50063E69F /* fft.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FA75522D8B9F50063E69F /* fft.xcdatamodeld */; };
+		1F4FA75922D8B9F60063E69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4FA75822D8B9F60063E69F /* Assets.xcassets */; };
+		1F4FA75C22D8B9F60063E69F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4FA75A22D8B9F60063E69F /* LaunchScreen.storyboard */; };
+		1F4FA76722D8B9F60063E69F /* fftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FA76622D8B9F60063E69F /* fftTests.swift */; };
+		C5D85CD04A6078362C71B30D /* Pods_fft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B4ED93C795369CEDE01272 /* Pods_fft.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F4FA76322D8B9F60063E69F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F4FA74322D8B9F40063E69F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F4FA74A22D8B9F40063E69F;
+			remoteInfo = fft;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12B4ED93C795369CEDE01272 /* Pods_fft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4AFA9C22D8C54D00B00985 /* MatlabUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatlabUtils.swift; sourceTree = "<group>"; };
+		1F4FA74B22D8B9F50063E69F /* fft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4FA74E22D8B9F50063E69F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F4FA75022D8B9F50063E69F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F4FA75322D8B9F50063E69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F4FA75622D8B9F50063E69F /* fft.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fft.xcdatamodel; sourceTree = "<group>"; };
+		1F4FA75822D8B9F60063E69F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F4FA75B22D8B9F60063E69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F4FA75D22D8B9F60063E69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F4FA76222D8B9F60063E69F /* fftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4FA76622D8B9F60063E69F /* fftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fftTests.swift; sourceTree = "<group>"; };
+		1F4FA76822D8B9F60063E69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C41B45AFAF1B3CC8D38887C9 /* Pods-fft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fft.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fft/Pods-fft.debug.xcconfig"; sourceTree = "<group>"; };
+		EF57A259A556A7CF2028005A /* Pods-fft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fft.release.xcconfig"; path = "Pods/Target Support Files/Pods-fft/Pods-fft.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F4FA74822D8B9F40063E69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D85CD04A6078362C71B30D /* Pods_fft.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4FA75F22D8B9F60063E69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F4FA74222D8B9F40063E69F = {
+			isa = PBXGroup;
+			children = (
+				1F4FA74D22D8B9F50063E69F /* fft */,
+				1F4FA76522D8B9F60063E69F /* fftTests */,
+				1F4FA74C22D8B9F50063E69F /* Products */,
+				BED6511F30C90A00C66CA8DA /* Pods */,
+				EAB42E5B63DB3C813FE3BE8D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F4FA74C22D8B9F50063E69F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F4FA74B22D8B9F50063E69F /* fft.app */,
+				1F4FA76222D8B9F60063E69F /* fftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F4FA74D22D8B9F50063E69F /* fft */ = {
+			isa = PBXGroup;
+			children = (
+				1F4FA74E22D8B9F50063E69F /* AppDelegate.swift */,
+				1F4FA75022D8B9F50063E69F /* ViewController.swift */,
+				1F4AFA9C22D8C54D00B00985 /* MatlabUtils.swift */,
+				1F4FA75222D8B9F50063E69F /* Main.storyboard */,
+				1F4FA75822D8B9F60063E69F /* Assets.xcassets */,
+				1F4FA75A22D8B9F60063E69F /* LaunchScreen.storyboard */,
+				1F4FA75D22D8B9F60063E69F /* Info.plist */,
+				1F4FA75522D8B9F50063E69F /* fft.xcdatamodeld */,
+			);
+			path = fft;
+			sourceTree = "<group>";
+		};
+		1F4FA76522D8B9F60063E69F /* fftTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F4FA76622D8B9F60063E69F /* fftTests.swift */,
+				1F4FA76822D8B9F60063E69F /* Info.plist */,
+			);
+			path = fftTests;
+			sourceTree = "<group>";
+		};
+		BED6511F30C90A00C66CA8DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C41B45AFAF1B3CC8D38887C9 /* Pods-fft.debug.xcconfig */,
+				EF57A259A556A7CF2028005A /* Pods-fft.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAB42E5B63DB3C813FE3BE8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12B4ED93C795369CEDE01272 /* Pods_fft.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F4FA74A22D8B9F40063E69F /* fft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4FA76B22D8B9F60063E69F /* Build configuration list for PBXNativeTarget "fft" */;
+			buildPhases = (
+				F5684598BBDB5B0A1B0B5A4E /* [CP] Check Pods Manifest.lock */,
+				1F4FA74722D8B9F40063E69F /* Sources */,
+				1F4FA74822D8B9F40063E69F /* Frameworks */,
+				1F4FA74922D8B9F40063E69F /* Resources */,
+				BB3C4CDD67F40BFF06524C28 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fft;
+			productName = fft;
+			productReference = 1F4FA74B22D8B9F50063E69F /* fft.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F4FA76122D8B9F60063E69F /* fftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4FA76E22D8B9F60063E69F /* Build configuration list for PBXNativeTarget "fftTests" */;
+			buildPhases = (
+				1F4FA75E22D8B9F60063E69F /* Sources */,
+				1F4FA75F22D8B9F60063E69F /* Frameworks */,
+				1F4FA76022D8B9F60063E69F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F4FA76422D8B9F60063E69F /* PBXTargetDependency */,
+			);
+			name = fftTests;
+			productName = fftTests;
+			productReference = 1F4FA76222D8B9F60063E69F /* fftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F4FA74322D8B9F40063E69F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = HKUST;
+				TargetAttributes = {
+					1F4FA74A22D8B9F40063E69F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					1F4FA76122D8B9F60063E69F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1F4FA74A22D8B9F40063E69F;
+					};
+				};
+			};
+			buildConfigurationList = 1F4FA74622D8B9F40063E69F /* Build configuration list for PBXProject "fft" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F4FA74222D8B9F40063E69F;
+			productRefGroup = 1F4FA74C22D8B9F50063E69F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F4FA74A22D8B9F40063E69F /* fft */,
+				1F4FA76122D8B9F60063E69F /* fftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F4FA74922D8B9F40063E69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4FA75C22D8B9F60063E69F /* LaunchScreen.storyboard in Resources */,
+				1F4FA75922D8B9F60063E69F /* Assets.xcassets in Resources */,
+				1F4FA75422D8B9F50063E69F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4FA76022D8B9F60063E69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB3C4CDD67F40BFF06524C28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fft/Pods-fft-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSV.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fft/Pods-fft-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5684598BBDB5B0A1B0B5A4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fft-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F4FA74722D8B9F40063E69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4FA75122D8B9F50063E69F /* ViewController.swift in Sources */,
+				1F4FA75722D8B9F50063E69F /* fft.xcdatamodeld in Sources */,
+				1F4AFA9D22D8C54D00B00985 /* MatlabUtils.swift in Sources */,
+				1F4FA74F22D8B9F50063E69F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4FA75E22D8B9F60063E69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4FA76722D8B9F60063E69F /* fftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F4FA76422D8B9F60063E69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F4FA74A22D8B9F40063E69F /* fft */;
+			targetProxy = 1F4FA76322D8B9F60063E69F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F4FA75222D8B9F50063E69F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F4FA75322D8B9F50063E69F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F4FA75A22D8B9F60063E69F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F4FA75B22D8B9F60063E69F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F4FA76922D8B9F60063E69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F4FA76A22D8B9F60063E69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F4FA76C22D8B9F60063E69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41B45AFAF1B3CC8D38887C9 /* Pods-fft.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WJX5RA45KB;
+				INFOPLIST_FILE = fft/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kellyhwong.fft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F4FA76D22D8B9F60063E69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF57A259A556A7CF2028005A /* Pods-fft.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WJX5RA45KB;
+				INFOPLIST_FILE = fft/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kellyhwong.fft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F4FA76F22D8B9F60063E69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WJX5RA45KB;
+				INFOPLIST_FILE = fftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kellyhwong.fftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fft.app/fft";
+			};
+			name = Debug;
+		};
+		1F4FA77022D8B9F60063E69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WJX5RA45KB;
+				INFOPLIST_FILE = fftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kellyhwong.fftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fft.app/fft";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F4FA74622D8B9F40063E69F /* Build configuration list for PBXProject "fft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4FA76922D8B9F60063E69F /* Debug */,
+				1F4FA76A22D8B9F60063E69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F4FA76B22D8B9F60063E69F /* Build configuration list for PBXNativeTarget "fft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4FA76C22D8B9F60063E69F /* Debug */,
+				1F4FA76D22D8B9F60063E69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F4FA76E22D8B9F60063E69F /* Build configuration list for PBXNativeTarget "fftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4FA76F22D8B9F60063E69F /* Debug */,
+				1F4FA77022D8B9F60063E69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F4FA75522D8B9F50063E69F /* fft.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F4FA75622D8B9F50063E69F /* fft.xcdatamodel */,
+			);
+			currentVersion = 1F4FA75622D8B9F50063E69F /* fft.xcdatamodel */;
+			path = fft.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1F4FA74322D8B9F40063E69F /* Project object */;
+}
