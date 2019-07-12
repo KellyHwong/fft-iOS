@@ -66,12 +66,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F28690122D8D4240061F99B /* filter */ = {
+			isa = PBXGroup;
+			children = (
+				1F4AFA9C22D8C54D00B00985 /* MatlabUtils.swift */,
+			);
+			path = filter;
+			sourceTree = "<group>";
+		};
 		1F4FA74222D8B9F40063E69F = {
 			isa = PBXGroup;
 			children = (
 				1F4AFAA022D8CB3200B00985 /* MatlabUtilsTests.playground */,
-				1F4FA74D22D8B9F50063E69F /* fft */,
-				1F4FA76522D8B9F60063E69F /* fftTests */,
+				1F4FA74D22D8B9F50063E69F /* filter */,
+				1F4FA76522D8B9F60063E69F /* filterTests */,
 				1F4FA74C22D8B9F50063E69F /* Products */,
 				BED6511F30C90A00C66CA8DA /* Pods */,
 				EAB42E5B63DB3C813FE3BE8D /* Frameworks */,
@@ -87,28 +95,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F4FA74D22D8B9F50063E69F /* fft */ = {
+		1F4FA74D22D8B9F50063E69F /* filter */ = {
 			isa = PBXGroup;
 			children = (
+				1F28690122D8D4240061F99B /* filter */,
 				1F4FA74E22D8B9F50063E69F /* AppDelegate.swift */,
 				1F4FA75022D8B9F50063E69F /* ViewController.swift */,
-				1F4AFA9C22D8C54D00B00985 /* MatlabUtils.swift */,
 				1F4FA75222D8B9F50063E69F /* Main.storyboard */,
 				1F4FA75822D8B9F60063E69F /* Assets.xcassets */,
 				1F4FA75A22D8B9F60063E69F /* LaunchScreen.storyboard */,
 				1F4FA75D22D8B9F60063E69F /* Info.plist */,
 				1F4FA75522D8B9F50063E69F /* fft.xcdatamodeld */,
 			);
-			path = fft;
+			path = filter;
 			sourceTree = "<group>";
 		};
-		1F4FA76522D8B9F60063E69F /* fftTests */ = {
+		1F4FA76522D8B9F60063E69F /* filterTests */ = {
 			isa = PBXGroup;
 			children = (
 				1F4FA76622D8B9F60063E69F /* fftTests.swift */,
 				1F4FA76822D8B9F60063E69F /* Info.plist */,
 			);
-			path = fftTests;
+			path = filterTests;
 			sourceTree = "<group>";
 		};
 		BED6511F30C90A00C66CA8DA /* Pods */ = {
