@@ -15,7 +15,7 @@
 		1F4FA75922D8B9F60063E69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4FA75822D8B9F60063E69F /* Assets.xcassets */; };
 		1F4FA75C22D8B9F60063E69F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4FA75A22D8B9F60063E69F /* LaunchScreen.storyboard */; };
 		1F4FA76722D8B9F60063E69F /* fftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FA76622D8B9F60063E69F /* fftTests.swift */; };
-		C5D85CD04A6078362C71B30D /* Pods_fft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B4ED93C795369CEDE01272 /* Pods_fft.framework */; };
+		9081379F903D05AD321EB8EE /* Pods_filter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06EDA83A6F6A9DF301B2F8B /* Pods_filter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12B4ED93C795369CEDE01272 /* Pods_fft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4AFA9C22D8C54D00B00985 /* MatlabUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatlabUtils.swift; sourceTree = "<group>"; };
+		1F4AFAA022D8CB3200B00985 /* MatlabUtilsTests.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MatlabUtilsTests.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1F4FA74B22D8B9F50063E69F /* filter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = filter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4FA74E22D8B9F50063E69F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F4FA75022D8B9F50063E69F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,8 +42,9 @@
 		1F4FA76222D8B9F60063E69F /* filterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = filterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4FA76622D8B9F60063E69F /* fftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fftTests.swift; sourceTree = "<group>"; };
 		1F4FA76822D8B9F60063E69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C41B45AFAF1B3CC8D38887C9 /* Pods-fft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fft.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fft/Pods-fft.debug.xcconfig"; sourceTree = "<group>"; };
-		EF57A259A556A7CF2028005A /* Pods-fft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fft.release.xcconfig"; path = "Pods/Target Support Files/Pods-fft/Pods-fft.release.xcconfig"; sourceTree = "<group>"; };
+		4636C7E57231287CF32F59AF /* Pods-filter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filter.release.xcconfig"; path = "Pods/Target Support Files/Pods-filter/Pods-filter.release.xcconfig"; sourceTree = "<group>"; };
+		64E1DE83BFCE121D017F1E4E /* Pods-filter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-filter/Pods-filter.debug.xcconfig"; sourceTree = "<group>"; };
+		A06EDA83A6F6A9DF301B2F8B /* Pods_filter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_filter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5D85CD04A6078362C71B30D /* Pods_fft.framework in Frameworks */,
+				9081379F903D05AD321EB8EE /* Pods_filter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +69,7 @@
 		1F4FA74222D8B9F40063E69F = {
 			isa = PBXGroup;
 			children = (
+				1F4AFAA022D8CB3200B00985 /* MatlabUtilsTests.playground */,
 				1F4FA74D22D8B9F50063E69F /* fft */,
 				1F4FA76522D8B9F60063E69F /* fftTests */,
 				1F4FA74C22D8B9F50063E69F /* Products */,
@@ -112,8 +114,8 @@
 		BED6511F30C90A00C66CA8DA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C41B45AFAF1B3CC8D38887C9 /* Pods-fft.debug.xcconfig */,
-				EF57A259A556A7CF2028005A /* Pods-fft.release.xcconfig */,
+				64E1DE83BFCE121D017F1E4E /* Pods-filter.debug.xcconfig */,
+				4636C7E57231287CF32F59AF /* Pods-filter.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -121,7 +123,7 @@
 		EAB42E5B63DB3C813FE3BE8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				12B4ED93C795369CEDE01272 /* Pods_fft.framework */,
+				A06EDA83A6F6A9DF301B2F8B /* Pods_filter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,7 +233,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-fft/Pods-fft-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-filter/Pods-filter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -240,7 +242,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fft/Pods-fft-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-filter/Pods-filter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F5684598BBDB5B0A1B0B5A4E /* [CP] Check Pods Manifest.lock */ = {
@@ -254,7 +256,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-fft-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-filter-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -431,7 +433,7 @@
 		};
 		1F4FA76C22D8B9F60063E69F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C41B45AFAF1B3CC8D38887C9 /* Pods-fft.debug.xcconfig */;
+			baseConfigurationReference = 64E1DE83BFCE121D017F1E4E /* Pods-filter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,7 +452,7 @@
 		};
 		1F4FA76D22D8B9F60063E69F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF57A259A556A7CF2028005A /* Pods-fft.release.xcconfig */;
+			baseConfigurationReference = 4636C7E57231287CF32F59AF /* Pods-filter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,16 +1,16 @@
 PODS:
-  - CSV.swift (2.1.0)
+  - CSV.swift (2.4.1)
 
 DEPENDENCIES:
-  - CSV.swift (~> 2.1.0)
+  - CSV.swift (~> 2.4.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - CSV.swift
 
 SPEC CHECKSUMS:
-  CSV.swift: a24fb11c17875523783fe963592762ff163ef8ea
+  CSV.swift: f31c4e4d06b3f20b2380f4a4754108c8f36528a8
 
-PODFILE CHECKSUM: b5f53c4d27002748dbb81abb28e1d21914f475ae
+PODFILE CHECKSUM: 84c50e6b14b29ea6e52f66015a5ce4a8489a3cae
 
 COCOAPODS: 1.5.0

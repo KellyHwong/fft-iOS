@@ -1,5 +1,5 @@
 use_frameworks!
 
-target 'fft' do
-    pod 'CSV.swift', '~> 2.1.0'
+target 'filter' do
+    pod 'CSV.swift', '~> 2.4.1'
 end
